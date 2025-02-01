@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     const response = await result.response.text();
 
     console.log(result.response.text());
-    return NextResponse.json({response});
+    return NextResponse.json({ response });
   } catch (error) {
     console.error("Error processing the request:", error);
     return NextResponse.json(
